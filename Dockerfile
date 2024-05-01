@@ -1,7 +1,6 @@
-FROM ubuntu:latest
+FROM mongodb/mongodb-community-server
 
-# Install MongoDB
-RUN apt-get update && apt-get install -y mongodb
+
 
 # Create the MongoDB data directory
 RUN mkdir -p /data/db
